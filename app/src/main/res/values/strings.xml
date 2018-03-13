@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProTemplate</string>
+    <string name="version_default">1.0.0</string>
 </resources>

@@ -25,4 +25,23 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //RxJava2---proguard
+    compile 'io.reactivex.rxjava2:rxjava:2.1.5'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //Retrofit2---proguard
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'org.ligboy.retrofit2:converter-fastjson-android:2.0.2'
+    //为了解决fastjson对于多层级json数据排序问题而使用高版本(上面库关于fastjson版本(1.1.50)偏低)---proguard
+    compile 'com.alibaba:fastjson:1.2.41'
+    //retrofit+rxjava---proguard
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //okhttp
+    //日志控制器---proguard
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    //注解框架---proguard
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //订阅框架---proguard
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //一个强大并且灵活的RecyclerViewAdapte---proguard
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.4.7'
 }
